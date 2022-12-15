@@ -23,7 +23,76 @@ const POSSIBLE_MESSAGE = [
   'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.'
 ];
 
+const EFFECTS = {
+  chrome: {
+    filter: 'grayscale',
+    units: '',
+    options: {
+      range: {
+        min: 0,
+        max: 1,
+      },
+      start: 1,
+      step: 0.1,
+    }
+  },
+  sepia: {
+    filter: 'sepia',
+    units: '',
+    options: {
+      range: {
+        min: 0,
+        max: 1,
+      },
+      start: 1,
+      step: 0.1,
+    }
+  },
+  marvin: {
+    filter: 'invert',
+    units: '%',
+    options: {
+      range: {
+        min: 0,
+        max: 100,
+      },
+      start: 100,
+      step: 1,
+    }
+  },
+  phobos: {
+    filter: 'blur',
+    units: 'px',
+    options: {
+      range: {
+        min: 0,
+        max: 3,
+      },
+      start: 3,
+      step: 0.1,
+    }
+  },
+  heat: {
+    filter: 'brightness',
+    units: '',
+    options: {
+      range: {
+        min: 1,
+        max: 3,
+      },
+      start: 3,
+      step: 0.1,
+    }
+  }
+};
+
+const SCALE = {
+  STEP: 25,
+  MIN: 25,
+  MAX: 100
+};
+
 const usedCommentsID = [];
 
-export {POSSIBLE_NAMES, POSSIBLE_DESCRIPTIONS, POSSIBLE_MESSAGE, usedCommentsID};
+export {POSSIBLE_NAMES, POSSIBLE_DESCRIPTIONS, POSSIBLE_MESSAGE, EFFECTS, SCALE, usedCommentsID};
 
