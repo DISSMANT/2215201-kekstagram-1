@@ -24,6 +24,18 @@ const POSSIBLE_MESSAGE = [
 ];
 
 const EFFECTS = {
+  none: {
+    filter: 'none',
+    unit: '',
+    options: {
+      range: {
+        min: 0,
+        max: 100
+      },
+      start: 100,
+      step: 1
+    }
+  },
   chrome: {
     filter: 'grayscale',
     units: '',
@@ -86,6 +98,8 @@ const EFFECTS = {
   }
 };
 
+const ALERT_SHOW_TIME = 2500;
+
 const SCALE = {
   STEP: 25,
   MIN: 25,
@@ -94,5 +108,5 @@ const SCALE = {
 
 const usedCommentsID = [];
 
-export {POSSIBLE_NAMES, POSSIBLE_DESCRIPTIONS, POSSIBLE_MESSAGE, EFFECTS, SCALE, usedCommentsID};
+export {POSSIBLE_NAMES, POSSIBLE_DESCRIPTIONS, POSSIBLE_MESSAGE, EFFECTS, ALERT_SHOW_TIME, SCALE, usedCommentsID};
 

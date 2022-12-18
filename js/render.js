@@ -28,6 +28,9 @@ const renderPictures = (pictures) => {
   picturesList.append(pictureContainer);
 };
 
-renderPictures(generatePosts(25));
-renderUploadForm();
-initialEffects();
+// renderPictures(generatePosts(25));
+// renderUploadForm();
+// initialEffects();
+
+export {renderPictures};
+

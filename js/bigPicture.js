@@ -95,4 +95,4 @@ const openPicture = (element) => {
   document.addEventListener('keydown', onDocumentEscKeyDown);
 };
 
-export { openPicture };
+export {openPicture};

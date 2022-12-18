@@ -31,7 +31,8 @@ const onFilterButtonChange = (evt) => {
   const evtHandler = evt.target.value;
   if (evtHandler === 'none') {
     sliderWrapper.classList.add('hidden');
-    imgPreview.style.filter = 'none';
+    imgPreview.style.filter = EFFECTS[evtHandler].filter;
+    imgPreview.removeAttribute('class');
   }
 
   else {
